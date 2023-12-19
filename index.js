@@ -36,11 +36,8 @@ let employees = [worker1, engineer1, worker2];
 employees.push(engineer2);
 
 let total_salary = 0;
-let employee_index = 0;
-while (employees[employee_index] !== undefined) {
-  let employee = employees[employee_index];
+employees.forEach(function (employee) {
   let salary = calculate_salary(employee.role);
   total_salary = total_salary + salary;
-  employee_index = employee_index + 1;
-}
+});
 console.log(total_salary);
