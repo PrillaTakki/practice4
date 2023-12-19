@@ -9,3 +9,8 @@ test('worker salary', function () {
   let salary = calculate_salary('worker');
   expect(salary).toBe(1500);
 });
+
+test('accountant salary', function () {
+  let salary = calculate_salary('accountant');
+  expect(salary).toBe(2500);
+});
